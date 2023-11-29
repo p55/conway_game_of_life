@@ -18,8 +18,30 @@ RSpec.describe ConwayGameOfLife::World do
     end
   end
 
-  describe '#next_iteration' do
-    pending 'implement me'
+  describe '#next_iteration!' do
+    context 'when cell is dead' do
+      context 'when cell has 1 or 2 living neighbors' do
+        pending 'does not revive cell'
+      end
+
+      context 'when cell is dead and have 3 and more living neighbors' do
+        pending 'it makes cell alive'
+      end
+    end
+
+    context 'when cell is alive' do
+      context 'when cell has 2 or 3 live neighbors' do
+        pending 'does not kill cell'
+      end
+
+      context 'when cell has 1 live neighbor' do
+        pending 'kills cell'
+      end
+
+      context 'when cell has 4 and more live neighbors' do
+        pending 'kills cell'
+      end
+    end
   end
 
   describe '#randomize' do
