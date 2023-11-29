@@ -5,7 +5,7 @@ module ConwayGameOfLife
     attr_accessor :sleep_period
 
     def initialize
-      @sleep_period = 0.25
+      @sleep_period = 0.2
     end
   end
 end
