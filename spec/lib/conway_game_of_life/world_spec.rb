@@ -24,7 +24,7 @@ RSpec.describe ConwayGameOfLife::World do
         pending 'does not revive cell'
       end
 
-      context 'when cell is dead and have 3 and more living neighbors' do
+      context 'when cell is dead and have exactly 3 living neighbors' do
         pending 'it makes cell alive'
       end
     end
