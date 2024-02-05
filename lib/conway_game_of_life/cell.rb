@@ -5,7 +5,7 @@ module ConwayGameOfLife
     ALIVE_SYMBOL = '■'
     DEAD_SYMBOL = '▢'
 
-    attr_reader :x, :y, :alive
+    attr_reader :x, :y
 
     def initialize(x:, y:, world:, alive: false)
       @x = x
