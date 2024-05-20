@@ -36,9 +36,9 @@ module ConwayGameOfLife
         new_board[cell.x][cell.y] = ConwayGameOfLife::Cell.new(x: cell.x, y: cell.y, alive: cell.alive?, world: self)
 
         if cell.dead? && living_neighbors == 3
-            new_board[cell.x][cell.y].live!
+          new_board[cell.x][cell.y].live!
         elsif living_neighbors < 2 || living_neighbors > 3
-            new_board[cell.x][cell.y].die!
+          new_board[cell.x][cell.y].die!
         end
       end
 

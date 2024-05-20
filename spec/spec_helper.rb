@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "conway_game_of_life"
+require "pry"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
